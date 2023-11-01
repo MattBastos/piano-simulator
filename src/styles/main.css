@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #cce7fa;
+}
+
+.container {
+  width: 780px;
+  padding: 35px 40px;
+  margin: 0 40px;
+  border-radius: 20px;
+  background-color: #000000;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  gap: 25px;
+  color: #b2b2b2;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+header .column {
+  display: flex;
+  align-items: center;
+}
+
+header .column span {
+  margin-right: 15px;
+  font-size: 1.19rem;
+  font-weight: 500;
+}
+
+.volume-slider {
+  accent-color: #ffffff;
+}
+
+.keys-check input {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 30px;
+  background-color: #4b4b4b;
+  cursor: pointer;
+  appearance: none;
+}
+
+.keys-check input:hover {
+  background-color: #565656;
+}
+
+.keys-check input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  width: 18px;
+  height: 18px;
+  border-radius: inherit;
+  background-color: #8c8c8c;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.keys-check input:checked::before {
+  left: 1.7rem;
+  background-color: #ffffff;
+}
+
+.piano-keys {
+  display: flex;
+  margin-top: 40px;
+}
