@@ -97,7 +97,7 @@ header .column span {
   background: linear-gradient(#ffffff 96%, #eeeeee 4%);
 }
 
-.piano-keys .white:active {
+.piano-keys .white.active {
   scale: 99%;
   box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to bottom #ffffff 0%, #eeeeee 100%);
@@ -113,7 +113,7 @@ header .column span {
   background: linear-gradient(#333333, #000000);
 }
 
-.piano-keys .black:active {
+.piano-keys .black.active {
   scale: 99%;
   box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
   background: linear-gradient(to bottom #000000, #434343);
