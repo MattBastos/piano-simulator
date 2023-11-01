@@ -79,3 +79,54 @@ header .column span {
   display: flex;
   margin-top: 40px;
 }
+
+.piano-keys .key {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  text-transform: uppercase;
+  color: #a2a2a2;
+}
+
+.piano-keys .white {
+  width: 50px;
+  height: 230px;
+  border: 1px solid #8c8c8c;
+  border-radius: 8px;
+  background: linear-gradient(#ffffff 96%, #eeeeee 4%);
+}
+
+.piano-keys .white:active {
+  scale: 99%;
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom #ffffff 0%, #eeeeee 100%);
+}
+
+.piano-keys .black {
+  width: 30px;
+  height: 140px;
+  margin: 0 -15px 0 -15px;
+  z-index: 2;
+  border: 1px solid #000000;
+  border-radius: 2px 2px 4px 4px;
+  background: linear-gradient(#333333, #000000);
+}
+
+.piano-keys .black:active {
+  scale: 99%;
+  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom #000000, #434343);
+}
+
+.piano-keys span {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 1.13rem;
+  text-align: center;
+}
+
+.piano-keys .black span {
+  font-size: 0.8rem;
+}
