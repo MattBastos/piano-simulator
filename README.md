@@ -11,6 +11,10 @@ Bem-vindo ao Piano Virtual, um simulador de piano desenvolvido com JavaScript pu
 - Controle de volume integrado.
 - Alternância de teclas para iniciantes.
 
+## Demonstração
+
+Veja o Piano Virtual em ação [aqui](https://mattbastos.github.io/piano-simulator/).
+
 ## Como Usar
 
 1. Clone o repositório:
