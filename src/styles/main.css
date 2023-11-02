@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -37,6 +38,33 @@ header .column span {
   margin-right: 15px;
   font-size: 1.19rem;
   font-weight: 500;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media a {
+  padding: 5px;
+  margin: 20px 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.social-media a:hover {
+  background-color: #eeeeee;
+}
+
+.social-media img {
+  width: 50px;
+  height: 50px;
 }
 
 .volume-slider {
