@@ -2,19 +2,22 @@ const pianoKeys = document.querySelectorAll(".piano-keys .key");
 const volumeSlider = document.querySelector(".volume-slider input");
 
 let mappedKeys = [];
-
 let audio = new Audio("src/tunes/src_tunes_y.wav");
 
-const playTune = (key) => {
-  audio.src = `src/tunes/${key}.wav`;
-  audio.play();
-
+const activateAndDeactivateKey = (key) => {
   const clickedKey = document.querySelector(`[data-key="${key}"]`);
   clickedKey.classList.add("active");
 
   setTimeout(() => {
     clickedKey.classList.remove("active");
   }, 150);
+};
+
+const playTune = (key) => {
+  audio.src = `src/tunes/${key}.wav`;
+  audio.play();
+
+  activateAndDeactivateKey(key);
 };
 
 const handleChangeVolume = ({ target }) => (audio.volume = target.value);
